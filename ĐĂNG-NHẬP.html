@@ -1,5 +1,6 @@
 ﻿<!doctype html>
 <html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 <meta charset="utf-8">
 <title>ĐĂNG NHẬP</title>
@@ -89,19 +90,7 @@ height:100%;
           transform: translateY(85px);
 }
 
-.container h1 {
-  font-size: 40px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-timing-function: ease-in-put;
-          transition-timing-function: ease-in-put;
-  font-weight: 200;
-}
-form {
-  padding: 20px 0;
-  position: relative;
-  z-index: 2;
-}
+
 form input {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -257,36 +246,6 @@ form button:hover {
 
 
 
-
-body{
-	font-family:Arial, Helvetica, sans-serif;
-	color: white;
-	font-weight: 300;
-	
-	::-webkit-input-placeholder { /* WebKit browsers */
-		font-family: Arial, Helvetica, sans-serif;
-			color:    black;
-		font-weight: 300;
-	}
-	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-		font-family: Arial, Helvetica, sans-serif;
-		 color:    black;
-		 opacity:  1;
-		font-weight: 300;
-	}
-	::-moz-placeholder { /* Mozilla Firefox 19+ */
-		font-family: Arial, Helvetica, sans-serif;
-		 color:    black;
-		 opacity:  1;
-		font-weight: 300;
-	}
-	:-ms-input-placeholder { /* Internet Explorer 10+ */
-		font-family: Arial, Helvetica, sans-serif;
-		 color:    black;
-		font-weight: 300;
-	}
-}
-
 .wrapper{
   background: -webkit-gradient(linear, right top, left top, from(#8942a8), to(#ba382f));
   background: linear-gradient(to left,#ffcc99,#4dd2ff);
@@ -295,7 +254,7 @@ body{
 	top: 50%;
 	left: 0;
 	width: 100%;
-	height: 500px;
+	height: 100%;
 	margin-top: -190px;
 	overflow: hidden;
 	
@@ -312,7 +271,7 @@ body{
 
 	margin: 0 auto;
 	padding: 80px 0;
-	height: 400px;
+	height:auto;
 	text-align: center;
 	
 	h1{
@@ -380,14 +339,7 @@ form{
 	}
 }	
 
-.bg-bubbles{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	
-	z-index: 1;
+
 	
 	li{
 		position: absolute;
@@ -491,6 +443,184 @@ form{
   0%   { transform: translateY(0); }
   100% { transform: translateY(-700px) rotate(600deg); }
 }
+
+
+
+.footer {
+  background: -webkit-gradient(linear, right top, left top, from(#8942a8), to(#ba382f));
+  background: linear-gradient(to left,#ffcc99,#006699);
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 5px;
+  
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 5px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color:black;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color:black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 20px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 10px;
+  margin-right: 3px;
+
+}
+
+
+.footer .footer-center {
+  width: 25%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 10px;
+  margin: 10px 3px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color:black;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #0099ff;
+}
+
+.footer .menu {
+  color:black;
+  margin: 0px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #0099ff;
+}
+
+.footer .name {
+  color:black;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+
+
+
+.header-img {
+    height: 55px;
+    width: 55px;
+	float: left;
+}
+
+
+
+header  {
+    display: inline;
+
+}
+
 </style>
 </head>
 
@@ -514,6 +644,7 @@ form{
 <div align="center">
 <br></p>
 <br></p>
+<a id="Button1" href="https://muasam.github.io/online/index.html" style="position:absolute;left:8px;top:25px;width:95px;height:40px;z-index:0;">Trang Chủ</a>
 <p style="font-size: 1.2em; color: #000099; font-weight: bold">ĐĂNG NHẬP</p>
 </div>
 
@@ -542,7 +673,46 @@ form{
 
 		</form>
 	</div>
+<div>
+<footer class="footer">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class="about">
+      <span> THÔNG TIN DỊCH VỤ</span> Chúng Tôi chuyên cung cấp các trang Website bán hàng Online. </p>
+
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span></span>  Liên Hệ: 79 Huỳnh Thúc Kháng<span> </span> Thành Phố Đông Hà, Tỉnh Quảng Trị</p>
+    </div>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p> (+84) 916 468 333</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a style="color:black;" href="#"> khanhvtn@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+
+    <p class="menu">
+      <a href="./index.html"> Trang Chủ</a> |
+      <a href="#"> Dịch vụ Website</a> |
+    </p>
 	
+	   <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+	<br></p>
+    <p class="name"> Lê Văn Khanh Copyright © 2021. All right reserved.</p>
+  </div>
+</footer>
+</div>	
 	<ul class="bg-bubbles">
 		<li></li>
 		<li></li>
@@ -558,9 +728,8 @@ form{
 </div>
 
 
-</body>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<html>
-<a id="Button1" href="https://muasam.github.io/online/index.html" style="position:absolute;left:8px;top:25px;width:95px;height:40px;z-index:0;">Trang Chủ</a>
+
+
+
 </body>
 </html>
